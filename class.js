@@ -331,5 +331,22 @@
 // bike.brake(30);        
 // bike.describe();       
 
-//*******************************************************************PROTOTYPES************************************************************************* */
+//********************************************************PROTOTYPES************************************************************************* */
+class Person {
+    constructor(firstName, lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+    
+    greet() {
+        console.log("Hi there! I'm", this.firstName);
+    }
 
+    introduce() {
+        console.log("Hi there! I'm", this.firstName, this.lastName);
+    }
+}
+
+const person = new Person('John', 'Doe');
+person.greet();     
+person.introduce();  
